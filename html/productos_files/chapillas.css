@@ -1,0 +1,377 @@
+/* line 1, ../../../app/stylesheets/layout.sass */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../../../app/stylesheets/layout.sass */
+body {
+  font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+  background-color: #5f4642;
+  height: 100%;
+  cursor: url(/images/puntero.png), auto;
+}
+
+/* line 24, ../../../app/stylesheets/layout.sass */
+.stretch {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 28, ../../../app/stylesheets/layout.sass */
+#wrap {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 32, ../../../app/stylesheets/layout.sass */
+#superior {
+  background-color: #41660f;
+  height: 70px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* line 39, ../../../app/stylesheets/layout.sass */
+#menu {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* line 43, ../../../app/stylesheets/layout.sass */
+#logo {
+  background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent;
+  height: 60px;
+  width: 250px;
+  margin-top: 8px;
+  float: left;
+}
+
+/* line 50, ../../../app/stylesheets/layout.sass */
+#inicio, #empresa, #productos, #servicios, #contactenos, #beneficios {
+  float: left;
+  display: block;
+  margin-top: 25px;
+  text-decoration: none;
+  padding: 0 23px;
+}
+
+/* line 58, ../../../app/stylesheets/layout.sass */
+#menu input {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+/* line 61, ../../../app/stylesheets/layout.sass */
+#menu li {
+  float: left;
+  list-style-type: none;
+  display: block;
+}
+/* line 65, ../../../app/stylesheets/layout.sass */
+#menu li a.on {
+  color: white;
+}
+/* line 67, ../../../app/stylesheets/layout.sass */
+#menu .texto-menu {
+  font-family: verdana;
+  font-size: 20px;
+  color: #a4dc22;
+  font-weight: lighter;
+}
+/* line 72, ../../../app/stylesheets/layout.sass */
+#menu .on {
+  text-decoration: none;
+}
+/* line 74, ../../../app/stylesheets/layout.sass */
+#menu #beneficios {
+  color: #ffb100;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+/* line 79, ../../../app/stylesheets/layout.sass */
+#inferior {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* line 83, ../../../app/stylesheets/layout.sass */
+#productos-item {
+  position: relative;
+}
+
+/* line 3, ../../../app/stylesheets/chapillas.sass */
+#izquierda-fondo {
+  position: relative;
+  width: 517px;
+  z-index: 0;
+}
+
+/* line 8, ../../../app/stylesheets/chapillas.sass */
+#izquierda {
+  float: left;
+  width: 557px;
+  margin-top: -20px;
+}
+/* line 12, ../../../app/stylesheets/chapillas.sass */
+#izquierda .top {
+  background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent;
+  height: 50px;
+}
+/* line 15, ../../../app/stylesheets/chapillas.sass */
+#izquierda .centro {
+  background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent;
+  height: 435px;
+}
+/* line 18, ../../../app/stylesheets/chapillas.sass */
+#izquierda .bottom {
+  background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent;
+  height: 55px;
+}
+
+/* line 22, ../../../app/stylesheets/chapillas.sass */
+#contenido-zoom {
+  position: absolute;
+  width: 520px;
+  top: 40px;
+  left: 0;
+  z-index: 0;
+}
+
+/* line 29, ../../../app/stylesheets/chapillas.sass */
+#zoom {
+  height: 375px;
+  width: 450px;
+  margin-top: 10px;
+  margin-left: 36px;
+}
+
+/* line 35, ../../../app/stylesheets/chapillas.sass */
+#icono-hoja {
+  background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent;
+  height: 50px;
+  width: 50px;
+  float: right;
+  margin-right: 35px;
+  margin-top: 20px;
+}
+
+/* line 43, ../../../app/stylesheets/chapillas.sass */
+#contenido-zoom .nombre-producto {
+  margin-left: 35px;
+}
+
+/* line 46, ../../../app/stylesheets/chapillas.sass */
+#nombre-zoom {
+  font-family: verdana;
+  color: white;
+  font-size: 24px;
+}
+
+/* line 51, ../../../app/stylesheets/chapillas.sass */
+#codigo-zoom {
+  font-family: verdana;
+  color: white;
+  font-size: 24px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* line 58, ../../../app/stylesheets/chapillas.sass */
+#derecha {
+  float: left;
+  position: relative;
+  width: 422px;
+  height: 490px;
+}
+
+/* line 64, ../../../app/stylesheets/chapillas.sass */
+#flecha-izq, #flecha-der, #contenido-galeria {
+  float: left;
+}
+
+/* line 67, ../../../app/stylesheets/chapillas.sass */
+#flecha-izq, #flecha-der {
+  color: white;
+  font-size: 35px;
+  font-weight: 900;
+  padding: 74px 10px 0px;
+  width: 21px;
+  height: 36px;
+}
+
+/* line 75, ../../../app/stylesheets/chapillas.sass */
+#flecha-izq p, #flecha-der p {
+  width: 21px;
+  height: 36px;
+  cursor: pointer;
+}
+
+/* line 80, ../../../app/stylesheets/chapillas.sass */
+#flecha-izq p {
+  background: url("/images/flecha-izquierda.png") no-repeat 0 0;
+}
+
+/* line 83, ../../../app/stylesheets/chapillas.sass */
+#flecha-der p {
+  background: url("/images/flecha-derecha.png") no-repeat 0 0;
+}
+
+/* line 86, ../../../app/stylesheets/chapillas.sass */
+#galeria {
+  margin-top: 25px;
+}
+
+/* line 89, ../../../app/stylesheets/chapillas.sass */
+#contenido-galeria {
+  width: 340px;
+}
+
+/* line 92, ../../../app/stylesheets/chapillas.sass */
+.lista-thumbs {
+  float: left;
+}
+
+/* line 96, ../../../app/stylesheets/chapillas.sass */
+#derecha .lista-container {
+  width: 340px;
+  height: 200px;
+  float: left;
+  margin: 0 10px;
+}
+/* line 101, ../../../app/stylesheets/chapillas.sass */
+#derecha .scrollable {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  width: 340px;
+}
+/* line 106, ../../../app/stylesheets/chapillas.sass */
+#derecha .scrollable .items {
+  width: 2000em;
+  position: absolute;
+}
+/* line 109, ../../../app/stylesheets/chapillas.sass */
+#derecha .lista-thumbs .thumb {
+  width: 100px;
+  height: 83px;
+  background-color: white;
+  float: left;
+  margin: 10px 10px 10px 0;
+  display: block;
+}
+/* line 116, ../../../app/stylesheets/chapillas.sass */
+#derecha .lista-thumbs .thumb.last {
+  margin-right: 0;
+}
+/* line 118, ../../../app/stylesheets/chapillas.sass */
+#derecha .lista-thumbs .thumb a {
+  display: block;
+}
+/* line 120, ../../../app/stylesheets/chapillas.sass */
+#derecha #descripcion {
+  clear: left;
+  float: left;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+}
+/* line 126, ../../../app/stylesheets/chapillas.sass */
+#derecha #descripcion .info {
+  position: relative;
+  padding: 10px 20px;
+  background: url("/images/pixel-productos-info.png") repeat-y 0 0;
+}
+/* line 130, ../../../app/stylesheets/chapillas.sass */
+#derecha #descripcion h2 {
+  font-weight: lighter;
+  color: white;
+  padding: 10px 0;
+}
+/* line 134, ../../../app/stylesheets/chapillas.sass */
+#derecha #descripcion .info p {
+  font-size: 13px;
+  text-align: justify;
+  line-height: 1.4em;
+  color: #f8fcdd;
+}
+/* line 139, ../../../app/stylesheets/chapillas.sass */
+#derecha #abre-especs {
+  width: 422px;
+  background: url("/images/pixel-productos-especificaciones.png") repeat-y 0 0;
+  float: left;
+  position: relative;
+}
+/* line 144, ../../../app/stylesheets/chapillas.sass */
+#derecha #abre-especs a {
+  font-size: 16px;
+  padding: 10px 0;
+  float: right;
+  margin-right: 50px;
+  color: white;
+  text-decoration: none;
+}
+/* line 151, ../../../app/stylesheets/chapillas.sass */
+#derecha #abre-especs .flechita {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 20px;
+  top: 13px;
+}
+/* line 157, ../../../app/stylesheets/chapillas.sass */
+#derecha #abre-especs .flechita.arriba {
+  background: url(/images/flechas-arriba.png) no-repeat 0 0;
+}
+/* line 159, ../../../app/stylesheets/chapillas.sass */
+#derecha #abre-especs .flechita.abajo {
+  background: url(/images/flechas-abajo.png) no-repeat 0 0;
+}
+
+/* line 162, ../../../app/stylesheets/chapillas.sass */
+#especs {
+  position: absolute;
+  bottom: 38px;
+  left: 0;
+  background: url(/images/pixel-productos-info.png) repeat-y 0 0;
+  color: white;
+  height: 220px;
+  width: 100%;
+  overflow: auto;
+}
+/* line 171, ../../../app/stylesheets/chapillas.sass */
+#especs p {
+  font-size: 14px;
+}
+/* line 173, ../../../app/stylesheets/chapillas.sass */
+#especs .spec {
+  width: 100%;
+  margin: 5px 0;
+  clear: both;
+}
+/* line 177, ../../../app/stylesheets/chapillas.sass */
+#especs .spec p {
+  padding: 0;
+  margin: 10px;
+  margin-bottom: 0;
+}
+/* line 181, ../../../app/stylesheets/chapillas.sass */
+#especs .spec p.label {
+  background: url("/images/pixel-especificaciones.png") repeat-y scroll 0 0 transparent;
+  padding: 3px;
+}
+/* line 184, ../../../app/stylesheets/chapillas.sass */
+#especs .spec p.dato-1, #especs .spec p.dato-2 {
+  text-align: right;
+  width: 40%;
+  margin: 5px 15px 5px 15px;
+}
+/* line 188, ../../../app/stylesheets/chapillas.sass */
+#especs .spec p.dato-1 {
+  float: left;
+}
+/* line 190, ../../../app/stylesheets/chapillas.sass */
+#especs .spec p.dato-2 {
+  float: right;
+}

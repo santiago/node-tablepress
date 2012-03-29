@@ -1,0 +1,60 @@
+!!! 5
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    title tablepress
+
+    link(href="/favicon.png", rel="icon", type="image/png")
+    link(href="/css/screen.css", media="screen, projection", rel="stylesheet", type="text/css")
+    link(href="/css/print.css", media="print", rel="stylesheet", type="text/css")
+    link(href="/css/layout.css", media="screen", rel="stylesheet", type="text/css")
+    link(href="/css/desplegable.css", media="screen", rel="stylesheet", type="text/css")
+    link(href="/css/bgstretcher.css", media="screen", rel="stylesheet", type="text/css")
+    
+    
+    //if lt IE 9
+      link(href="/css/puto_ie.css?1328021371", media="all", rel="stylesheet", type="text/css")
+
+  body(cz-shortcut-listen='true')
+    #wrap
+      #superior
+        ul#menu
+          li
+            a#logo(href='/productos/tableros#')  
+          li
+            a#inicio.texto-menu(href='/') inicio
+          li
+            a#empresa.texto-menu(href='/empresa') empresa
+          li#productos-item
+            a#productos.texto-menu(href='/productos') productos
+            #desplegable-fondo(style='display: none;')
+              ul#productos-lista
+                li.first
+                  a.menu-desplegable(href='/productos/chapilla') chapilla
+                li
+                  a.menu-desplegable(href='/productos/cantos') cantos
+                li.last
+                  a.menu-desplegable(href='/productos/tableros') tableros
+              .centro &nbsp;
+              .bottom &nbsp;
+              .seleccionado.off &nbsp;
+          li
+            a#contactenos.texto-menu(href='/contacto') contáctenos
+          li
+            a#beneficios.texto-menu(href='/beneficios') beneficios
+
+      != body
+
+    script(src='/js/jquery-1.4.2.min.js', type='text/javascript')
+    script(src='/js/jquery.ui.core.min.js', type='text/javascript')
+    script(src='/js/jquery.ui.widget.js', type='text/javascript')
+    script(src='/js/jquery.ui.selectmenu.js', type='text/javascript')
+    script(src="/js/jquery.cycle.lite.min.js", type="text/javascript")
+    script(src="/js/slideshow.js", type="text/javascript")
+    script(src='/js/jquery.tools.min.js', type='text/javascript')
+
+    script(src='/js/app.js', type='text/javascript')
+    script(src='/js/menu.js', type='text/javascript')
+    script(src='/js/bgstretcher.js', type='text/javascript')
+    script(src='/js/bg.js', type='text/javascript')

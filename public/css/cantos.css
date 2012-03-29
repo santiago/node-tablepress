@@ -1,0 +1,124 @@
+/* line 3, ../../../app/stylesheets/cantos.sass */
+#izquierda {
+  height: 500px;
+  width: 547px;
+  margin-top: -20px;
+  float: left;
+}
+
+/* line 9, ../../../app/stylesheets/cantos.sass */
+#izquierda-fondo {
+  position: absolute;
+  width: 520px;
+  z-index: 0;
+}
+
+/* line 15, ../../../app/stylesheets/cantos.sass */
+#izquierda .top {
+  background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent;
+  height: 50px;
+}
+/* line 18, ../../../app/stylesheets/cantos.sass */
+#izquierda .centro {
+  background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent;
+  height: 435px;
+}
+/* line 21, ../../../app/stylesheets/cantos.sass */
+#izquierda .bottom {
+  background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent;
+  height: 55px;
+}
+
+/* line 25, ../../../app/stylesheets/cantos.sass */
+#contenido-zoom {
+  float: left;
+  position: absolute;
+  width: 520px;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+}
+
+/* line 33, ../../../app/stylesheets/cantos.sass */
+#zoom {
+  height: 375px;
+  position: absolute;
+  width: 450px;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 36px;
+}
+
+/* line 42, ../../../app/stylesheets/cantos.sass */
+#icono-hoja {
+  background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  float: right;
+  top: 405px;
+  margin-right: 35px;
+}
+
+/* line 51, ../../../app/stylesheets/cantos.sass */
+#contenido-zoom .nombre-producto {
+  position: absolute;
+  width: 450px;
+  top: 392px;
+  left: 40px;
+}
+
+/* line 57, ../../../app/stylesheets/cantos.sass */
+#nombre-zoom, #codigo-zoom {
+  font-family: verdana;
+  color: white;
+  font-size: 24px;
+}
+
+/* line 62, ../../../app/stylesheets/cantos.sass */
+#derecha {
+  width: 423px;
+  float: left;
+  position: relative;
+  z-index: 3;
+  margin-left: 10px;
+}
+
+/* line 69, ../../../app/stylesheets/cantos.sass */
+#fondo-derecha {
+  background: url("/images/pixel-productos-info.png") repeat-y 0 0 transparent;
+  height: 350px;
+  margin-top: 120px;
+  position: relative;
+}
+
+/* line 75, ../../../app/stylesheets/cantos.sass */
+#texto-cantos-tableros, #texto-tableros {
+  color: #f8fcdd;
+  line-height: 1.6em;
+  width: 390px;
+  margin-top: 165px;
+  margin-left: 25px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+/* line 87, ../../../app/stylesheets/cantos.sass */
+#texto-cantos-tableros b {
+  font-size: 18px;
+  color: white;
+}
+
+/* line 91, ../../../app/stylesheets/cantos.sass */
+#texto-tableros {
+  margin-top: 140px;
+}
+/* line 92, ../../../app/stylesheets/cantos.sass */
+#texto-tableros b {
+  font-size: 18px;
+  color: white;
+}

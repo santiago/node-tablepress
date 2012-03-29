@@ -1,0 +1,150 @@
+/* line 3, ../../../app/stylesheets/contacto.sass */
+#izquierda {
+  height: 500px;
+  width: 520px;
+  margin-top: -35px;
+  float: left;
+  margin-left: -10px;
+}
+
+/* line 10, ../../../app/stylesheets/contacto.sass */
+#izquierda-fondo {
+  position: absolute;
+  width: 520px;
+  z-index: 3;
+}
+
+/* line 16, ../../../app/stylesheets/contacto.sass */
+#izquierda .top {
+  background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent;
+  height: 50px;
+  margin-top: 10px;
+}
+/* line 20, ../../../app/stylesheets/contacto.sass */
+#izquierda .centro {
+  background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent;
+  height: 435px;
+}
+/* line 23, ../../../app/stylesheets/contacto.sass */
+#izquierda .bottom {
+  background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent;
+  height: 55px;
+}
+
+/* line 27, ../../../app/stylesheets/contacto.sass */
+#contenido-zoom {
+  height: 500px;
+  float: left;
+  position: absolute;
+  width: 520px;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+}
+
+/* line 36, ../../../app/stylesheets/contacto.sass */
+#contacto {
+  height: 375px;
+  position: absolute;
+  width: 450px;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+/* line 45, ../../../app/stylesheets/contacto.sass */
+#contacto-titulo, #contacto-mail, #contacto-informacion {
+  color: white;
+  font-size: 18px;
+}
+
+/* line 49, ../../../app/stylesheets/contacto.sass */
+#contacto-titulo {
+  font-size: 26px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* line 54, ../../../app/stylesheets/contacto.sass */
+#contacto-mail {
+  color: #7effff;
+  display: block;
+}
+
+/* line 58, ../../../app/stylesheets/contacto.sass */
+#contacto-informacion {
+  line-height: 2.3em;
+  margin-top: 15px;
+}
+
+/* line 62, ../../../app/stylesheets/contacto.sass */
+#icono-hoja {
+  background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  float: right;
+  top: 405px;
+  margin-right: 35px;
+}
+
+/* line 71, ../../../app/stylesheets/contacto.sass */
+#derecha {
+  height: 500px;
+  width: 423px;
+  float: left;
+  margin-left: 37px;
+  position: relative;
+}
+
+/* line 80, ../../../app/stylesheets/contacto.sass */
+#fondo-derecha {
+  background: url("/images/pixel-productos-info.png") repeat-y 0 0 transparent;
+  height: 497px;
+  position: relative;
+}
+
+/* line 85, ../../../app/stylesheets/contacto.sass */
+#contacto-formulario {
+  height: 450px;
+  width: 400px;
+  position: absolute;
+  height: 0px;
+  left: 0px;
+}
+/* line 91, ../../../app/stylesheets/contacto.sass */
+#contacto-formulario input, #contacto-formulario textarea, #contacto-formulario select {
+  margin-left: 36px;
+  margin-top: 10px;
+  height: 24px;
+  width: 350px;
+  opacity: 0.7;
+  font-size: 16px;
+}
+/* line 98, ../../../app/stylesheets/contacto.sass */
+#contacto-formulario p.formulario {
+  color: white;
+  margin-left: 26px;
+  margin-top: 15px;
+}
+
+/* line 103, ../../../app/stylesheets/contacto.sass */
+#formulario-mensaje {
+  width: 400px;
+}
+/* line 105, ../../../app/stylesheets/contacto.sass */
+#formulario-mensaje textarea {
+  height: 100px;
+}
+
+/* line 108, ../../../app/stylesheets/contacto.sass */
+#contacto-formulario button {
+  float: right;
+  margin-top: 10px;
+}
+
+/* line 112, ../../../app/stylesheets/contacto.sass */
+#dirigido {
+  width: 400px;
+}

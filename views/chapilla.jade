@@ -1,0 +1,84 @@
+link(href="/css/chapillas.css", media="screen", rel="stylesheet", type="text/css")
+#inferior
+  #izquierda
+    #izquierda-fondo
+      .top &nbsp;
+      .centro &nbsp;
+      .bottom &nbsp;
+      #contenido-zoom
+        #zoom
+          img(src='')
+        #icono-hoja &nbsp;
+        .nombre-producto
+          p#nombre-zoom Ebano
+          p#codigo-zoom cod TP-0100
+  #derecha
+    #galeria
+      #flecha-izq
+        p.prev &nbsp;
+      #contenido-galeria
+        .scrollable
+          .items
+            - var containers= products.length%6==0 ? (products.length/6)|0 : (products.length/6+1)|0
+            -for(var i=0; i<containers; i++)
+              .lista-container
+                each j in [0,1]
+                  ul.lista-thumbs
+                    each k in [0,1,2]
+                      -var product= products[(i*6)+(j*3)+k]
+                      console.log(product)
+                      if !product
+                        -return
+                      -var product_id= "product-"+product.id
+                      -var klass= k==2 ? 'last' : null
+                      li.thumb(id=product_id, class=klass)
+                        a(href="#") 
+                          -var thumb= "/images/products/"+product.thumb_image
+                          img(src=thumb)
+      #flecha-der
+        p.next &nbsp;
+    #descripcion
+      .info
+        h2 Chapilla madera decorativa
+        p
+          | Para aplicaciones en acabados tales como cantos u otros,
+          | ofrecemos nuestra variedad de chapilla en diferentes
+          | especies como complemento ideal para el ebanista o carpintero en
+          | hojas de 250 x 64 cm y cantos prefabricados.
+      #especs(style='display: none;')
+        .spec
+          p.label Ancho
+          .datos
+            p.dato-1 64 cm
+            p.dato-2 +ó- 1 cm
+        .spec
+          p.label Largo
+          .datos
+            p.dato-1 250 mm
+            p.dato-2 +ó- 1 cm
+        .spec
+          p.label Espesor
+          .datos
+            p.dato-1 0.60 mm
+            p.dato-2 +ó- 0.05mm
+        .spec
+          p.label Contenido de Humedad
+          .datos
+            p.dato-1 10%
+            p.dato-2 +ó- 2%
+      #abre-especs
+        a(/home/productos#')
+          span Especificaciones
+          span.flechita.arriba  
+    #products-data(style='display: none;')
+      each product in products
+        div(class=product.id)
+          #zoom
+            -var zoom_image= "/images/products/"+product.zoom_image
+            img(src=zoom_image)
+          #icono-hoja &nbsp;
+          .nombre-producto
+            p#nombre-zoom
+              #{product.name}
+            p#codigo-zoom
+              #{product.code}

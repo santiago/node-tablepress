@@ -1,0 +1,13 @@
+{
+  "name": "tablepress",
+  "description": "tablepress",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": "",
+  "repository": "",
+  "engines": {
+    "node": ">= 6.0"
+  },
+  "dependencies": {
+  }
+}

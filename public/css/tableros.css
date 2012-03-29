@@ -1,0 +1,238 @@
+/* line 3, ../../../app/stylesheets/tableros.sass */
+#izquierda {
+  height: 500px;
+  width: 557px;
+  float: left;
+  margin-top: -20px;
+}
+
+/* line 9, ../../../app/stylesheets/tableros.sass */
+#izquierda-fondo {
+  position: absolute;
+  width: 550px;
+  z-index: 3;
+}
+
+/* line 15, ../../../app/stylesheets/tableros.sass */
+#izquierda .top {
+  background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent;
+  height: 50px;
+}
+/* line 18, ../../../app/stylesheets/tableros.sass */
+#izquierda .centro {
+  background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent;
+  height: 435px;
+}
+/* line 21, ../../../app/stylesheets/tableros.sass */
+#izquierda .bottom {
+  background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent;
+  height: 55px;
+}
+
+/* line 25, ../../../app/stylesheets/tableros.sass */
+#contenido-zoom {
+  height: 500px;
+  float: left;
+  position: absolute;
+  width: 520px;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+}
+
+/* line 34, ../../../app/stylesheets/tableros.sass */
+#zoom {
+  height: 375px;
+  position: absolute;
+  width: 450px;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 36px;
+}
+
+/* line 43, ../../../app/stylesheets/tableros.sass */
+#icono-hoja {
+  background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  float: right;
+  top: 405px;
+  margin-right: 35px;
+}
+
+/* line 52, ../../../app/stylesheets/tableros.sass */
+#contenido-zoom .nombre-producto {
+  position: absolute;
+  width: 450px;
+  top: 392px;
+  left: 40px;
+}
+
+/* line 58, ../../../app/stylesheets/tableros.sass */
+#nombre-zoom, #codigo-zoom {
+  font-family: verdana;
+  color: white;
+  font-size: 24px;
+}
+
+/* line 63, ../../../app/stylesheets/tableros.sass */
+#derecha {
+  height: 500px;
+  float: left;
+  position: relative;
+  z-index: 3;
+}
+
+/* line 69, ../../../app/stylesheets/tableros.sass */
+#fondo-derecha {
+  background: url("/images/pixel-contacto-formulario.png") repeat-y 0 0 transparent;
+  height: 350px;
+  margin-top: 120px;
+  position: relative;
+}
+
+/* line 75, ../../../app/stylesheets/tableros.sass */
+#texto-cantos-tableros, #texto-tableros {
+  color: #f8fcdd;
+  line-height: 1.6em;
+  width: 390px;
+  margin-top: 165px;
+  margin-left: 25px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+/* line 87, ../../../app/stylesheets/tableros.sass */
+#texto-cantos-tableros b {
+  font-size: 18px;
+  color: white;
+}
+
+/* line 91, ../../../app/stylesheets/tableros.sass */
+#texto-tableros {
+  margin-top: 140px;
+}
+/* line 92, ../../../app/stylesheets/tableros.sass */
+#texto-tableros b {
+  font-size: 18px;
+  color: white;
+}
+
+/* line 97, ../../../app/stylesheets/tableros.sass */
+#derecha {
+  float: left;
+  position: relative;
+  width: 423px;
+  height: 490px;
+}
+/* line 102, ../../../app/stylesheets/tableros.sass */
+#derecha .lista-thumbs .thumb {
+  width: 100px;
+  height: 83px;
+  background-color: white;
+  float: left;
+  margin: 10px 10px 10px 0;
+  display: block;
+}
+/* line 109, ../../../app/stylesheets/tableros.sass */
+#derecha .lista-thumbs .thumb.last {
+  margin-right: 0;
+}
+/* line 111, ../../../app/stylesheets/tableros.sass */
+#derecha .lista-thumbs .thumb a {
+  display: block;
+}
+/* line 113, ../../../app/stylesheets/tableros.sass */
+#derecha #descripcion {
+  clear: left;
+  float: left;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+}
+/* line 119, ../../../app/stylesheets/tableros.sass */
+#derecha #descripcion .info {
+  position: relative;
+  padding: 10px 20px;
+  background: url("/images/pixel-productos-info.png") repeat-y 0 0;
+}
+/* line 123, ../../../app/stylesheets/tableros.sass */
+#derecha #descripcion h2 {
+  font-weight: lighter;
+  color: white;
+  padding: 10px 0;
+}
+/* line 127, ../../../app/stylesheets/tableros.sass */
+#derecha #descripcion .info p {
+  font-size: 13px;
+  text-align: justify;
+  line-height: 1.4em;
+  color: #f8fcdd;
+}
+/* line 132, ../../../app/stylesheets/tableros.sass */
+#derecha #abre-especs {
+  width: 430px;
+  background: url("/images/pixel-productos-especificaciones.png") repeat-y 0 0;
+  float: left;
+}
+/* line 136, ../../../app/stylesheets/tableros.sass */
+#derecha #abre-especs a {
+  font-size: 16px;
+  padding: 10px 0;
+  float: right;
+  margin-right: 50px;
+  color: white;
+  text-decoration: none;
+}
+/* line 144, ../../../app/stylesheets/tableros.sass */
+#derecha #especs-tableros {
+  background: url("/images/pixel-productos-info.png") repeat-y 0 0;
+  color: white;
+  height: 340px;
+  width: 100%;
+  overflow: auto;
+}
+/* line 150, ../../../app/stylesheets/tableros.sass */
+#derecha #especs-tableros h2 {
+  margin-left: 10px;
+  padding-bottom: 0;
+}
+/* line 153, ../../../app/stylesheets/tableros.sass */
+#derecha #especs-tableros p {
+  font-size: 12px;
+}
+/* line 155, ../../../app/stylesheets/tableros.sass */
+#derecha #especs-tableros .spec {
+  width: 100%;
+  margin: 5px 0;
+  clear: both;
+}
+/* line 159, ../../../app/stylesheets/tableros.sass */
+#derecha #especs-tableros .spec p {
+  padding: 0;
+  margin: 10px;
+  margin-bottom: 0;
+}
+/* line 163, ../../../app/stylesheets/tableros.sass */
+#derecha #especs-tableros .spec p.label {
+  background: url("/images/pixel-especificaciones.png") repeat-y scroll 0 0 transparent;
+  padding: 3px;
+}
+/* line 166, ../../../app/stylesheets/tableros.sass */
+#derecha #especs-tableros .spec p.dato-1, #derecha #especs-tableros .spec p.dato-2 {
+  text-align: right;
+  margin: 5px 25px 10px 20px;
+}
+/* line 169, ../../../app/stylesheets/tableros.sass */
+#derecha #especs-tableros .spec p.dato-1 {
+  float: left;
+}
+/* line 171, ../../../app/stylesheets/tableros.sass */
+#derecha #especs-tableros .spec p.dato-2 {
+  float: right;
+}
