@@ -48,4 +48,5 @@ jQuery(document).ready(function($) {
     }
 
     $("a.texto-menu").removeClass("on");
+    $("a.texto-menu."+article).addClass("on");
 });

@@ -58,11 +58,17 @@ app.configure('production', function(){
 
 app.get('/', function(req, res){
     res.render('inicio', {
+	locals: {
+	    article: 'inicio'
+	}
     });
 });
 
 app.get('/empresa', function(req, res){
     res.render('empresa', {
+	locals: {
+	    article: 'empresa'
+	}
     });
 });
 
@@ -73,6 +79,9 @@ app.get('/beneficios', function(req, res){
 
 app.get('/contacto', function(req, res){
     res.render('contacto', {
+	locals: {
+	    article: 'contacto'
+	}
     });
 });
 
@@ -87,6 +96,7 @@ app.get('/productos', function(req, res){
 app.get('/productos/chapilla', function(req, res){
     res.render('chapilla', {
 	locals: {
+	    article: 'products',
 	    products: products
 	}
     });
@@ -94,11 +104,17 @@ app.get('/productos/chapilla', function(req, res){
 
 app.get('/productos/tableros', function(req, res){
     res.render('tableros', {
+	locals: {
+	    article: 'products'
+	}
     });
 });
 
 app.get('/productos/cantos', function(req, res){
     res.render('cantos', {
+	locals: {
+	    article: 'products'
+	}
     });
 });
 
