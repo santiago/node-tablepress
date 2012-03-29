@@ -1,13 +1,13 @@
 var products= [
-    { id: "0", name:"Zebrano", code: "tp-0170", thumb_image: "zebrano-peque.jpg", zoom_image:"zebrano-1.jpg" },
-    { id: "1", name:"Wengue", code: "tp-0160", thumb_image: "wengue-peque.png", zoom_image:"wengue-1.jpg" },
-    { id: "2", name:"Roble negro", code: "tp-0140", thumb_image: "roble-negro-peque.png", zoom_image:"roble negro-1.jpg" },
-    { id: "3", name:"Roble gris", code: "tp-0130", thumb_image: "roble-gris-peque.png", zoom_image:"roble gris-1.jpg" },
-    { id: "4", name:"Roble blanco mallado", code: "tp-0120", thumb_image: "roble-blanco-mallado-peque.png", zoom_image:"roble-blanco-mallado-zoom.png" },
-    { id: "5", name:"Nogal mallado", code: "tp-0110", thumb_image: "nogal-mallado-peque.jpg", zoom_image:"nogal mallado-1.jpg" },
-    { id: "6", name:"Roble blanco catedral", code: "tp-0180", thumb_image: "zebrano-peque.jpg", zoom_image:"roble blanco catedral-1.jpg" },
-    { id: "7", name:"Teka", code: "tp-0190", thumb_image: "zebrano-peque.jpg", zoom_image:"teka-1.jpg" },
-    { id: "8", name:"Ébano", code: "", thumb_image: "ebano-peque.jpg", zoom_image:"ebano-1.jpg" }
+    { id: "0", name:"Zebrano", code: "tp-0170", thumb_image: "zebrano-thumbs.jpg", zoom_image:"zebrano-1.jpg" },
+    { id: "1", name:"Wengue", code: "tp-0160", thumb_image: "wengue-thumbs.jpg", zoom_image:"wengue-1.jpg" },
+    { id: "2", name:"Roble negro", code: "tp-0140", thumb_image: "roble negro-thumbs.jpg", zoom_image:"roble negro-1.jpg" },
+    { id: "3", name:"Roble gris", code: "tp-0130", thumb_image: "roble gris-thumbs.jpg", zoom_image:"roble gris-1.jpg" },
+    // { id: "4", name:"Roble blanco mallado", code: "tp-0120", thumb_image: "roble-blanco-mallado-peque.png", zoom_image:"roble-blanco-mallado-zoom.png" },
+    { id: "5", name:"Nogal mallado", code: "tp-0110", thumb_image: "nogal mallado-thumbs.jpg", zoom_image:"nogal mallado-1.jpg" },
+    { id: "6", name:"Roble blanco catedral", code: "tp-0180", thumb_image: "roble blanco catedral-thumbs.jpg", zoom_image:"roble blanco catedral-1.jpg" },
+    { id: "7", name:"Teka", code: "tp-0190", thumb_image: "teka-thumbs.jpg", zoom_image:"teka-1.jpg" }
+    // { id: "8", name:"Ébano", code: "", thumb_image: "ebano-peque.jpg", zoom_image:"ebano-1.jpg" }
 ]
 
 /**
@@ -74,13 +74,16 @@ app.get('/empresa', function(req, res){
 
 app.get('/beneficios', function(req, res){
     res.render('beneficios', {
+	locals: {
+	    article: 'beneficios'
+	}
     });
 });
 
 app.get('/contacto', function(req, res){
     res.render('contacto', {
 	locals: {
-	    article: 'contacto'
+	    article: 'contactenos'
 	}
     });
 });
@@ -88,6 +91,7 @@ app.get('/contacto', function(req, res){
 app.get('/productos', function(req, res){
     res.render('chapilla', {
 	locals: {
+	    article: 'productos',
 	    products: products
 	}
     });
@@ -96,7 +100,7 @@ app.get('/productos', function(req, res){
 app.get('/productos/chapilla', function(req, res){
     res.render('chapilla', {
 	locals: {
-	    article: 'products',
+	    article: 'productos',
 	    products: products
 	}
     });
@@ -105,7 +109,7 @@ app.get('/productos/chapilla', function(req, res){
 app.get('/productos/tableros', function(req, res){
     res.render('tableros', {
 	locals: {
-	    article: 'products'
+	    article: 'productos'
 	}
     });
 });
@@ -113,7 +117,7 @@ app.get('/productos/tableros', function(req, res){
 app.get('/productos/cantos', function(req, res){
     res.render('cantos', {
 	locals: {
-	    article: 'products'
+	    article: 'productos'
 	}
     });
 });

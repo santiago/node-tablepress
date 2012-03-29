@@ -12,7 +12,7 @@ html(lang="en")
     link(href="/css/desplegable.css", media="screen", rel="stylesheet", type="text/css")
     link(href="/css/bgstretcher.css", media="screen", rel="stylesheet", type="text/css")
     script
-      var article= article;
+      var article= "#{article}";
     
     //if lt IE 9
       link(href="/css/puto_ie.css?1328021371", media="all", rel="stylesheet", type="text/css")
@@ -22,7 +22,7 @@ html(lang="en")
       #superior
         ul#menu
           li
-            a#logo(href='/productos/tableros#')  
+            a#logo(href='/') &nbsp;
           li
             a#inicio.texto-menu(href='/') inicio
           li
@@ -41,7 +41,7 @@ html(lang="en")
               .bottom &nbsp;
               .seleccionado.off &nbsp;
           li
-            a#contacto.texto-menu(href='/contacto') contáctenos
+            a#contactenos.texto-menu(href='/contacto') contáctenos
           li
             a#beneficios.texto-menu(href='/beneficios') beneficios
 
