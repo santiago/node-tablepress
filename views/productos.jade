@@ -1,58 +1,61 @@
-#inferior
-  #izquierda
-    #izquierda-fondo
-      .top &nbsp;
-      .centro &nbsp;
-      .bottom &nbsp;
-      #contenido-zoom
-        #zoom
-          img(src='')
-        #icono-hoja &nbsp;
-        .nombre-producto
-          p#nombre-zoom Ebano
-          p#codigo-zoom cod TP-0100
-  #derecha
-    #galeria
-      #flecha-izq
-        p.prev &nbsp;
-      #contenido-galeria
-        .scrollable
-          .items
-      #flecha-der
-        p.next &nbsp;
-    #descripcion
-      .info
-        h2 Chapilla madera decorativa
-        p
-          | Para aplicaciones en acabados tales como cantos u otros,
-          | ofrecemos nuestra variedad de chapilla en diferentes
-          | especies como complemento ideal para el ebanista o carpintero en
-          | hojas de 250 x 64 cm y cantos prefabricados.
-      #especs(style='display: none;')
-        .spec
-          p.label Ancho
-          .datos
-            p.dato-1 64 cm
-            p.dato-2 +ó- 1 cm
-        .spec
-          p.label Largo
-          .datos
-            p.dato-1 250 mm
-            p.dato-2 +ó- 1 cm
-        .spec
-          p.label Espesor
-          .datos
-            p.dato-1 0.60 mm
-            p.dato-2 +ó- 0.05mm
-        .spec
-          p.label Contenido de Humedad
-          .datos
-            p.dato-1 10%
-            p.dato-2 +ó- 2%
-      #abre-especs
-        a(href='http://table-press.com/home/productos#')
-          span Especificaciones
-          span.flechita.arriba  
-    #products-data(style='display: none;')
-script(src='/js/jquery.tools.min.js', type='text/javascript')
-script(src='/js/app.js', type='text/javascript')
+extend layout
+
+block content
+  #inferior
+    #izquierda
+      #izquierda-fondo
+        .top &nbsp;
+        .centro &nbsp;
+        .bottom &nbsp;
+        #contenido-zoom
+          #zoom
+            img(src='')
+          #icono-hoja &nbsp;
+          .nombre-producto
+            p#nombre-zoom Ebano
+            p#codigo-zoom cod TP-0100
+    #derecha
+      #galeria
+        #flecha-izq
+          p.prev &nbsp;
+        #contenido-galeria
+          .scrollable
+            .items
+        #flecha-der
+          p.next &nbsp;
+      #descripcion
+        .info
+          h2 Chapilla madera decorativa
+          p
+            | Para aplicaciones en acabados tales como cantos u otros,
+            | ofrecemos nuestra variedad de chapilla en diferentes
+            | especies como complemento ideal para el ebanista o carpintero en
+            | hojas de 250 x 64 cm y cantos prefabricados.
+        #especs(style='display: none;')
+          .spec
+            p.label Ancho
+            .datos
+              p.dato-1 64 cm
+              p.dato-2 +ó- 1 cm
+          .spec
+            p.label Largo
+            .datos
+              p.dato-1 250 mm
+              p.dato-2 +ó- 1 cm
+          .spec
+            p.label Espesor
+            .datos
+              p.dato-1 0.60 mm
+              p.dato-2 +ó- 0.05mm
+          .spec
+            p.label Contenido de Humedad
+            .datos
+              p.dato-1 10%
+              p.dato-2 +ó- 2%
+        #abre-especs
+          a(href='http://table-press.com/home/productos#')
+            span Especificaciones
+            span.flechita.arriba  
+      #products-data(style='display: none;')
+  script(src='/js/jquery.tools.min.js', type='text/javascript')
+  script(src='/js/app.js', type='text/javascript')

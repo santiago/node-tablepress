@@ -1,49 +1,52 @@
-link(href="/css/tableros.css", media="screen", rel="stylesheet", type="text/css")
-#inferior
-  #izquierda
-    #izquierda-fondo
-      .top &nbsp;
-      .centro &nbsp;
-      .bottom &nbsp;
-      #contenido-zoom
-        #zoom
-          img(src='/images/tableros-1.png')
-          img(src='/images/tableros-2.png')
-          img(src='/images/tableros-3.png')
-        #icono-hoja &nbsp;
-        .nombre-producto
-          p#nombre-zoom tableros
-  #derecha
-    #galeria
-      #flecha-izq
-        p  
-      #contenido-galeria
-      #flecha-der
-        p  
-    #descripcion
-      .info
-        h2 Tableros
-      #especs-tableros
-        h2 Especificaciones
-        .spec
-          p.label Materiales
-          .datos
-            p.dato-1 MDF,TABLEX,MUF,RH,TRIPLEX, en 1 y 2 caras.
-            p.dato-2
-        .spec
-          p.label Ancho
-          .datos
-            p.dato-1 120 cm
-            p.dato-2
-        .spec
-          p.label Largo
-          .datos
-            p.dato-1 240 cm
-            p.dato-2
-        .spec
-          p.label Espesor
-          .datos
-            p.dato-1 4mm – 6mm – 9mm – 12mm – 15mm – 18mm – 25mm – 30mm.
-            p.dato-2 +ó- 0.2 mm
-      .info
-        h2 Enchapamos Tableros en Formica.
+extend layout
+
+block content
+  link(href="/css/tableros.css", media="screen", rel="stylesheet", type="text/css")
+  #inferior
+    #izquierda
+      #izquierda-fondo
+        .top &nbsp;
+        .centro &nbsp;
+        .bottom &nbsp;
+        #contenido-zoom
+          #zoom
+            img(src='/images/tableros-1.png')
+            img(src='/images/tableros-2.png')
+            img(src='/images/tableros-3.png')
+          #icono-hoja &nbsp;
+          .nombre-producto
+            p#nombre-zoom tableros
+    #derecha
+      #galeria
+        #flecha-izq
+          p  
+        #contenido-galeria
+        #flecha-der
+          p  
+      #descripcion
+        .info
+          h2 Tableros
+        #especs-tableros
+          h2 Especificaciones
+          .spec
+            p.label Materiales
+            .datos
+              p.dato-1 MDF,TABLEX,MUF,RH,TRIPLEX, en 1 y 2 caras.
+              p.dato-2
+          .spec
+            p.label Ancho
+            .datos
+              p.dato-1 120 cm
+              p.dato-2
+          .spec
+            p.label Largo
+            .datos
+              p.dato-1 240 cm
+              p.dato-2
+          .spec
+            p.label Espesor
+            .datos
+              p.dato-1 4mm – 6mm – 9mm – 12mm – 15mm – 18mm – 25mm – 30mm.
+              p.dato-2 +ó- 0.2 mm
+        .info
+          h2 Enchapamos Tableros en Formica.

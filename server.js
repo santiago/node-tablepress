@@ -16,8 +16,7 @@ var products= [
 
 var express = require('express');
 var stylus = require('stylus');
-var app = module.exports = express.createServer();
-
+var app = express();
 
 // Configuration
 function compile(str, path) {
@@ -58,72 +57,56 @@ app.configure('production', function(){
 
 app.get('/', function(req, res){
     res.render('inicio', {
-	locals: {
 	    article: 'inicio'
-	}
     });
 });
 
 app.get('/empresa', function(req, res){
     res.render('empresa', {
-	locals: {
 	    article: 'empresa'
-	}
     });
 });
 
 app.get('/beneficios', function(req, res){
     res.render('beneficios', {
-	locals: {
 	    article: 'beneficios'
-	}
     });
 });
 
 app.get('/contacto', function(req, res){
     res.render('contacto', {
-	locals: {
 	    article: 'contactenos'
-	}
     });
 });
 
 app.get('/productos', function(req, res){
     res.render('chapilla', {
-	locals: {
 	    article: 'productos',
 	    products: products
-	}
     });
 });
 
 app.get('/productos/chapilla', function(req, res){
     res.render('chapilla', {
-	locals: {
 	    article: 'productos',
 	    products: products
-	}
     });
 });
 
 app.get('/productos/tableros', function(req, res){
     res.render('tableros', {
-	locals: {
 	    article: 'productos'
-	}
     });
 });
 
 app.get('/productos/cantos', function(req, res){
     res.render('cantos', {
-	locals: {
 	    article: 'productos'
-	}
     });
 });
 
 // Only listen on $ node app.js
 if (!module.parent) {
     app.listen(3030);
-    console.log("Express server listening on port %d", app.address().port)
+    console.log("Express server listening on port %d", 3030)
 }

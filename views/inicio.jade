@@ -1,6 +1,9 @@
-link(href="/css/inicio.css", media="screen", rel="stylesheet", type="text/css")
-#inferior
-  #inicio-logo
-    a(href='/empresa')
-      img(src='/images/logo-inicio.png')
-#linea-fondo
+extend layout
+
+block content
+  link(href="/css/inicio.css", media="screen", rel="stylesheet", type="text/css")
+  #inferior
+    #inicio-logo
+      a(href='/empresa')
+        img(src='/images/logo-inicio.png')
+  #linea-fondo

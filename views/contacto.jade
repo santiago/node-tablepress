@@ -1,42 +1,45 @@
-link(href="/css/contacto.css", media="screen", rel="stylesheet", type="text/css")
-#inferior
-  #izquierda
-    #izquierda-fondo
-      .top  
-      .centro  
-      .bottom  
-      #contenido-zoom
-        #contacto
-          img(src='/images/logo-contacto.png')
-          p#contacto-titulo Contáctenos
-          a#contacto-mail(href='mailto:simon@table-press.com') Gerencia
-          a#contacto-mail(href='mailto:luis@table-press.com') Ventas
-          a#contacto-mail(href='mailto:admin@table-press.com') Contabilidad
-          p#contacto-informacion
-            | Carrera 42 # 75-367 Interior 104
-            br
-            | Centro Industrial del Sur
-            br
-            | Teléfono : 57 (4) 376.26.77
-            br
-            | Itagüí - Colombia
-        #icono-hoja  
-  #derecha
-    #fondo-derecha
-      #contacto-formulario
-        p.formulario Nombre
-        input(name='nombre', type='text')
-        #dirigido
-          p.formulario Dirigido a
-          select(name='contacto')
-            option(value='luis@table-press.com') Ventas
-            option(value='simon@table-press.com') Gerencia
-            option(value='admin@table-press.com') Contabilidad
-        p.formulario e-mail
-        input(name='email', type='text')
-          p.formulario Asunto
-        input(name='asunto', type='text')
-        #formulario-mensaje
-          p.formulario Mensaje
-          textarea(name='mensaje')
-        button enviar
+extend layout
+
+block content
+  link(href="/css/contacto.css", media="screen", rel="stylesheet", type="text/css")
+  #inferior
+    #izquierda
+      #izquierda-fondo
+        .top  
+        .centro  
+        .bottom  
+        #contenido-zoom
+          #contacto
+            img(src='/images/logo-contacto.png')
+            p#contacto-titulo Contáctenos
+            a#contacto-mail(href='mailto:simon@table-press.com') Gerencia
+            a#contacto-mail(href='mailto:luis@table-press.com') Ventas
+            a#contacto-mail(href='mailto:admin@table-press.com') Contabilidad
+            p#contacto-informacion
+              | Carrera 42 # 75-367 Interior 104
+              br
+              | Centro Industrial del Sur
+              br
+              | Teléfono : 57 (4) 376.26.77
+              br
+              | Itagüí - Colombia
+          #icono-hoja  
+    #derecha
+      #fondo-derecha
+        #contacto-formulario
+          p.formulario Nombre
+          input(name='nombre', type='text')
+          #dirigido
+            p.formulario Dirigido a
+            select(name='contacto')
+              option(value='luis@table-press.com') Ventas
+              option(value='simon@table-press.com') Gerencia
+              option(value='admin@table-press.com') Contabilidad
+          p.formulario e-mail
+          input(name='email', type='text')
+            p.formulario Asunto
+          input(name='asunto', type='text')
+          #formulario-mensaje
+            p.formulario Mensaje
+            textarea(name='mensaje')
+          button enviar
