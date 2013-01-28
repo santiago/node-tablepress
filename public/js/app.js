@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
         $(this).find("a").click();
       });
 
-      // $el.find("li.thumb a").first().click();
+      $el.find("li.thumb a").first().click();
     },
 	
     _show_product: function() {
