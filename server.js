@@ -107,8 +107,7 @@ app.get('/productos/cantos', function(req, res){
 
 app.get('/productos/formipress', function(req, res){
     res.render('formipress', {
-        article: 'formipress',
-        products: formipress
+        article: 'formipress'
     });
 });
 
