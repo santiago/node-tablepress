@@ -1,0 +1,80 @@
+extend layout
+
+block content
+  link(href="/css/formipress.css", media="screen", rel="stylesheet", type="text/css")
+  #inferior
+    #izquierda
+      #izquierda-fondo
+        .top &nbsp;
+        .centro &nbsp;
+        .bottom &nbsp;
+        #contenido-zoom
+          #zoom
+            img(width='450', height='375', src='/images/formipress/Untitled-1.jpg')
+            img(width='450', height='375', src='/images/formipress/Untitled-2.jpg')
+            img(width='450', height='375', src='/images/formipress/Untitled-3.jpg')
+          #icono-hoja &nbsp;
+          .nombre-producto
+            p#nombre-zoom formipress
+    #derecha
+      #galeria
+        //#flecha-izq
+        //  p.prev &nbsp;
+        #contenido-galeria
+          .scrollable
+            .items
+              - var containers= 9%9==0 ? (9/9)|0 : (9/9+1)|0
+              -for(var i=0; i<containers; i++)
+                .lista-container
+                  each j in [0,1,2]
+                    ul.lista-thumbs
+                      each k in [0,1,2]
+                        -var klass= k==2 ? 'last' : null
+                        -var id = (i*9)+(j*3)+k;
+                        -if(id < 15)
+                          li.thumb(id='#{id}', class='#{klass}')
+                            a(href="#") 
+                              span.textura
+        //#flecha-der
+        //  p.next &nbsp;
+      #descripcion
+        .info(style='display: none;')
+          h2 Chapilla madera decorativa
+          p
+            | Para aplicaciones en acabados tales como cantos u otros,
+            | ofrecemos nuestra variedad de chapilla en diferentes
+            | especies como complemento ideal para el ebanista o carpintero en
+            | hojas de 250 x 64 cm y cantos prefabricados.
+        #especs
+          #abre-especs
+            a(/home/productos#')
+              span Especificaciones
+              // span.flechita.arriba  
+          .spec
+            p.label L&aacute;mina de formipress
+            .datos
+              p.dato-1 - Calibre f8
+              p.dato-2 - Postformable
+              p.dato-3 - Dimensiones 122&times;244 cm
+          .spec
+            p.label Tableros formipress
+            .datos
+              p.dato-1 - Calibres en mm: 9, 12, 15, 18, 25, 30, 36
+              p.dato-2 - Dimensiones: 120&times;240 cm
+              p.dato-3 - Sustratos: aglomerado, rh, muf, triplex y mdf
+          .spec
+            p.label Sustrato
+            .datos
+              p.dato-1 aglomerado melan&iacute;mico blanco
+              p.dato-2
+  #myModal.modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+    .modal-header
+      button(type="button", class="close", data-dismiss="modal", aria-hidden="true") ×
+      h3#myModalLabel Modal header
+    .modal-body
+      span.texture
+
+    .modal-footer
+      button.btn(data-dismiss="modal", aria-hidden="true") Cerrar
+block javascripts
+  script(src='/js/formipress.js', type='text/javascript')

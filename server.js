@@ -105,6 +105,19 @@ app.get('/productos/cantos', function(req, res){
     });
 });
 
+app.get('/productos/formipress', function(req, res){
+    res.render('formipress', {
+        article: 'formipress',
+        products: formipress
+    });
+});
+
+app.get('/productos/acrilpress', function(req, res){
+    res.render('acrilpress', {
+        article: 'acrilpress'
+    });
+});
+
 // Only listen on $ node app.js
 if (!module.parent) {
     app.listen(3030);

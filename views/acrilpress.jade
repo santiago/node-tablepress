@@ -1,0 +1,84 @@
+extend layout
+
+block content
+  link(href="/css/acrilpress.css", media="screen", rel="stylesheet", type="text/css")
+  #inferior
+    #izquierda
+      #izquierda-fondo
+        .top &nbsp;
+        .centro &nbsp;
+        .bottom &nbsp;
+        #contenido-zoom
+          #zoom
+            img(width='450', height='375', src='/images/acrilpress/cocina beige.jpg')
+            img(width='450', height='375', src='/images/acrilpress/cocina cafe.jpg')
+            img( width='450', height='375', src='/images/acrilpress/cocinas colores.jpg')
+            img(width='450', height='375', src='/images/acrilpress/tableros 2.jpg')
+            img(src='/images/acrilpress/tableros.jpg', style='margin-left:100px;')
+            img(width='450', height='375', src='/images/acrilpress/Untitled-4.jpg')
+            img(width='450', height='375', src='/images/acrilpress/Untitled-5.jpg')
+          #icono-hoja &nbsp;
+          .nombre-producto
+            p#nombre-zoom acrilpress
+    #derecha
+      #galeria
+        // #flecha-izq
+        //  p.prev &nbsp;
+        #contenido-galeria
+          .scrollable
+            .items
+              - var containers= 15%15==0 ? (15/15)|0 : (15/15+1)|0
+              -for(var i=0; i<containers; i++)
+                .lista-container
+                  each j in [0,1,2]
+                    ul.lista-thumbs
+                      each k in [0,1,2,3,4]
+                        -var klass= k==4 ? 'last' : null
+                        -var id = (i*15)+(j*5)+k;
+                        -if(id < 15)
+                          li.thumb(id='#{id}', class='#{klass}')
+                            //a(href="#myModal", role="button",  data-toggle="modal")
+                            a(href='#')
+                              span.color
+        //#flecha-der
+        //  p.next &nbsp;
+      #descripcion
+        .info(style='display: none;')
+          h2 Chapilla madera decorativa
+          p
+            | Para aplicaciones en acabados tales como cantos u otros,
+            | ofrecemos nuestra variedad de chapilla en diferentes
+            | especies como complemento ideal para el ebanista o carpintero en
+            | hojas de 250 x 64 cm y cantos prefabricados.
+        #especs
+          #abre-especs
+            a(/home/productos#')
+              span Especificaciones
+              // span.flechita.arriba  
+          .spec
+            p.label Dimensiones
+            .datos
+              p.dato-1 120&times;240 cm
+              p.dato-2 120&times;180 cm
+          .spec
+            p.label Calibre
+            .datos
+              p.dato-1 18mm aprox. 
+              p.dato-2 Diferentes calibres sobre pedido
+          .spec
+            p.label Sustrato
+            .datos
+              p.dato-1 aglomerado melan&iacute;mico blanco
+              p.dato-2
+  #myModal.modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+    .modal-header
+      button(type="button", class="close", data-dismiss="modal", aria-hidden="true") ×
+      h3#myModalLabel Modal header
+    .modal-body
+      span.color
+
+    .modal-footer
+      button.btn(data-dismiss="modal", aria-hidden="true") Cerrar
+
+block javascripts
+  script(src='/js/acrilpress.js', type='text/javascript')

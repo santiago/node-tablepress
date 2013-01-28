@@ -27,12 +27,12 @@
   top: 0px;
   left: 0px;
   width: 141px;
-  height: 220px;
+  height: 270px;
 }
 /* line 25, ../../../app/stylesheets/desplegable.sass */
 #desplegable-fondo .centro {
   background: url("/images/pixel-desplegable.png") repeat-y 0 0 transparent;
-  height: 200px;
+  height: 285px;
   width: 143px;
 }
 /* line 30, ../../../app/stylesheets/desplegable.sass */
@@ -66,6 +66,13 @@
 /* line 48, ../../../app/stylesheets/desplegable.sass */
 #desplegable-fondo .seleccionado.tableros {
   top: 173px;
+}
+
+#desplegable-fondo .seleccionado.acrilpress {
+  top: 222px;
+}
+#desplegable-fondo .seleccionado.formipress {
+  top: 271px;
 }
 
 /* line 51, ../../../app/stylesheets/desplegable.sass */
