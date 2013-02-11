@@ -337,3 +337,15 @@ span.textura {
   float: left;
   padding: 10px;
 }
+
+#myModal span.texture {
+  float: left;
+  width: 400px;
+  height: 400px;
+  background: url(/images/formipress/squared-textures.jpg) no-repeat;
+  background-position: -12px -10px;
+/*  -moz-box-shadow: 0 0 10px #888;
+  -webkit-box-shadow: 0 0 10px#888;
+  box-shadow: 0 0 10px #888;
+*/
+}

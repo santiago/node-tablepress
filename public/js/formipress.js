@@ -76,4 +76,25 @@ $(function() {
     $(this).find(".alt").remove();
   });
 
+  $("li.thumb a").click(function(e) {
+    var id = parseInt($(this).parent().attr("id"));
+    var name = formipress[id].name;
+    var code = formipress[id].code;
+
+    var _y = Math.floor(id/3);
+    var _x = id%3;
+
+    var x = -13-(410 * _x);
+    var y = -11-(410 * _y);
+
+    $("#myModal").modal();
+    $("#myModal")
+      .find('span.texture')
+        .css('background-position', x+'px '+y+'px')
+        .css('margin-left', '62px')
+      .end()
+      .find('#myModalLabel')
+        .text(name);
+  });
+
 })
