@@ -76,6 +76,14 @@ $(function() {
     $(this).find(".alt").remove();
   });
 
+  $("#myModal")
+  .on('show', function() {
+    $('#menu #productos').css('z-index', 1039);
+  })
+  .on('hidden', function() {
+    $('#menu #productos').css('z-index', 2000);
+  });
+
   $("li.thumb a").click(function(e) {
     var id = parseInt($(this).parent().attr("id"));
     var name = formipress[id].name;
